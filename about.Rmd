@@ -1,0 +1,52 @@
+---
+title: "about"
+author: "Anish Raj"
+date: "17/11/2019"
+output: md_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Car Selection App 
+
+Welcome to the "Car Selection App", that was developed as part of the Developing Data Products Course, from Coursera. The App helps you to select the best car based on your inputs and uses the database mtcars from R.
+
+Plese provide the below inforamtion:
+
+Particulars: The details and budget for your trip
+
+1. Distance of your trip 
+
+2. Price of gasoline in your region. 
+
+3. Maximum amount of money you want to spend on gasoline
+
+Desirables: The car charecteristics that you would wish to have
+
+1. Number of Cylinders
+
+2. Displacement
+
+3. Horse Power
+
+4. Transmission
+
+This information will be used to calculate the Gasoline Expenditure for each car in the dataset. 
+
+1. GasolineExpenditure= 
+  (Displacement input from your end/(miles per gallon*Gasoline price in your region)
+
+2. The app also checks for cars where the GasolineExpenditure is less than the budget 
+
+The table displays the cars accoding to the filtering crieteria mentioned above and gives the best alternative possible.
+
+
+Source code for ui.R and server.R files are available on the
+
+## Here is a summary of the Dataset mtcars eing used for this app
+```{r cars}
+summary(mtcars)
+```
+
